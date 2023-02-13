@@ -85,8 +85,8 @@ public class Main {
                         throw new RuntimeException("Калькулятор умеет только складывать, вычитать, умножать и делить");
                 }
             }
-            if (resultRoman<0)
-                throw new RuntimeException("Ответ меньше нуля, а в римской системе нет отрицательных чисел");
+            if (resultRoman<=0)
+                throw new RuntimeException("Ответ меньше либо равен нулю, а в римской системе нет нуля отрицательных чисел");
             else
                 result = roman[resultRoman-1];
         }
