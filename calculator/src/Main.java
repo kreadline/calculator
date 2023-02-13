@@ -86,7 +86,7 @@ public class Main {
                 }
             }
             if (resultRoman<=0)
-                throw new RuntimeException("Ответ меньше либо равен нулю, а в римской системе нет нуля отрицательных чисел");
+                throw new RuntimeException("Ответ меньше либо равен нулю, а в римской системе нет нуля и отрицательных чисел");
             else
                 result = roman[resultRoman-1];
         }
